@@ -1,0 +1,7 @@
+@mixin font-main {
+    font-family: $main-font;
+}
+
+@mixin font-decorated {
+    font-family: $decorated-font;
+}
