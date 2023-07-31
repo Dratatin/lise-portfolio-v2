@@ -1,4 +1,6 @@
-import Container from "../container/Container"
+import Container from "../container/Container";
+import Menu from "../../components/menu/Menu";
+import Socials from "../../components/socials/Socials";
 import "./_header.scss";
 
 const Header = () => {
@@ -6,7 +8,8 @@ const Header = () => {
         <header className="header">
             <Container layoutType="big">
                 <div className="header__content">
-                    Header
+                    <Menu />
+                    <Socials />
                 </div>
             </Container>
         </header>

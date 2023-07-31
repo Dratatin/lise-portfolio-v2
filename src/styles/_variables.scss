@@ -9,9 +9,12 @@ $secondary-light: lighten(#EB6633, 50%);
 $tertiary-light: lighten(#4A775D, 50%);
 $tertiary-light: lighten(#F2B641, 50%);
 
-$light-background: #F2F0F9;
-
+$light: #F2F0F9;
 
 //FONTS
 $decorated-font: 'Karla', sans-serif;
 $main-font: 'Karla', sans-serif;
+$global-font-size: 16px;
+
+//OTHERS
+$gap-wrapper-cta: 10px;

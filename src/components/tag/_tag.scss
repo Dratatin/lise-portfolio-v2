@@ -1,0 +1,23 @@
+@import "/src/styles/variables";
+
+.tag {
+    height: 30px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    white-space: nowrap;
+    &--circle {
+        padding: 0;
+        width: 30px;
+    }
+    &--primary.tag--fill {
+        color: $light;
+        background-color: $primary;
+    }
+    &--primary.tag--border {
+        color: $primary;
+        outline: 1px solid $primary;
+    }
+}

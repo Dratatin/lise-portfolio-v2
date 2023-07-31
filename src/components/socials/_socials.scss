@@ -1,0 +1,6 @@
+@import "/src/styles/variables";
+
+.socials {
+    display: flex;
+    gap: $gap-wrapper-cta;
+}
