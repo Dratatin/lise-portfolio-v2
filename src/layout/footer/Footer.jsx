@@ -1,4 +1,6 @@
 import Container from "../container/Container"
+import Credits from "../../components/credits/Credits";
+import Job from "../../components/job/Job";
 import "./_footer.scss";
 
 const Footer = () => {
@@ -6,7 +8,10 @@ const Footer = () => {
         <footer className="footer">
             <Container layoutType="big">
                 <div className="footer__content">
-                    Footer
+                    <div className="footer__content__wrapper">
+                        <Job />
+                        <Credits />
+                    </div>
                 </div>
             </Container>
         </footer>

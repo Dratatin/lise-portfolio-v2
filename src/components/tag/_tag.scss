@@ -1,8 +1,8 @@
 @import "/src/styles/variables";
 
 .tag {
-    height: 30px;
-    padding: 0 10px;
+    height: 35px;
+    padding: 0 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@
     white-space: nowrap;
     &--circle {
         padding: 0;
-        width: 30px;
+        width: 35px;
     }
     &--primary.tag--fill {
         color: $light;
@@ -18,6 +18,6 @@
     }
     &--primary.tag--border {
         color: $primary;
-        outline: 1px solid $primary;
+        outline: 2px solid $primary;
     }
 }

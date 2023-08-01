@@ -1,15 +1,15 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "./_nav.scss"
 
 const Nav = () => {
     return(
         <nav className="nav">
-            <Link to="/portfolio">
+            <NavLink to="/portfolio" className="nav__item">
                 Projets
-            </Link>
-            <Link to="/about">
+            </NavLink>
+            <NavLink to="/about" className="nav__item">
                 A propos
-            </Link>
+            </NavLink>
         </nav>
     )
 }
