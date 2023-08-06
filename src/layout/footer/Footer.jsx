@@ -8,10 +8,8 @@ const Footer = () => {
         <footer className="footer">
             <Container layoutType="big">
                 <div className="footer__content">
-                    <div className="footer__content__wrapper">
-                        <Job />
-                        <Credits />
-                    </div>
+                    <Job />
+                    <Credits />
                 </div>
             </Container>
         </footer>

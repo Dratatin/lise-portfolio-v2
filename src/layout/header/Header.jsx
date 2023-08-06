@@ -8,8 +8,10 @@ const Header = () => {
         <header className="header">
             <Container layoutType="big">
                 <div className="header__content">
-                    <Menu />
-                    <Socials />
+                    <div className="header__content__wrapper">
+                        <Menu />
+                        <Socials />
+                    </div>
                 </div>
             </Container>
         </header>

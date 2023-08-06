@@ -4,4 +4,5 @@
 
 @mixin font-decorated {
     font-family: $decorated-font;
+    letter-spacing: 0.05em;
 }

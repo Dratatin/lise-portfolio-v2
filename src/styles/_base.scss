@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face {
+    font-family: 'Bogam';
+    src: url('/src/assets/fonts/Bogam.woff') format('woff'),
+         url('/src/assets/fonts/Bogam.otf') format('opentype'),
+         url('/src/assets/fonts/Bogam.ttf') format('truetype');
+}
+
 
 body {
-    @include font-decorated;
+    @include font-main;
 }
 
 * {
@@ -16,4 +25,14 @@ body {
     font-size: $global-font-size;
     color: $primary;
     font-weight: 500;
+    gap: 30px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4 {
+    @include font-decorated;
 }
