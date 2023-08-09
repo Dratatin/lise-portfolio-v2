@@ -1,5 +1,10 @@
+@import "/src/styles/variables";
+
 .job {
     display: flex;
     align-items: center;
     gap: 5px;
+    &__icon {
+        fill: $secondary;
+    }
 }

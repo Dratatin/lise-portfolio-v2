@@ -5,7 +5,7 @@ const Job = () => {
     return(
         <div className="job">
             Directrice Artistique
-            <Star />
+            <Star className="job__icon" />
         </div>
     )
 }
