@@ -1,0 +1,28 @@
+@import "/src/styles/variables";
+
+.portfolio {
+    height: 100%;
+    padding: 40px 0;
+    &__slider {
+        height: 100%;
+        padding-left: $container-big-padding;
+        padding-right: $container-big-padding;
+        cursor: grab;
+        user-select: none;
+        &__item {
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:not(:last-child) {
+                padding-right: 100px;
+            }
+        }
+    }
+}
+
+.swiper-wrapper {
+    transition-duration: 0.6s !important;
+    /*Ease-out for scrolling, big difference when changed*/
+    transition-timing-function: ease-out;
+}

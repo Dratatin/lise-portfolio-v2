@@ -1,8 +1,6 @@
 @import "/src/styles/variables";
 
 .tag {
-    height: 35px;
-    padding: 0 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,5 +17,14 @@
     &--primary.tag--border {
         color: $primary;
         outline: 2px solid $primary;
+    }
+    &--medium {
+        height: 35px;
+        padding: 0 15px;
+    }
+    &--big {
+        height: 55px;
+        padding: 0 30px;
+        font-size: 18px;
     }
 }
