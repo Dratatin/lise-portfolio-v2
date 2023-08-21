@@ -14,6 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            animation: slide 0.5s both;
             &:not(:last-child) {
                 padding-right: 100px;
             }
@@ -25,4 +26,16 @@
     transition-duration: 0.6s !important;
     /*Ease-out for scrolling, big difference when changed*/
     transition-timing-function: ease-out;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(100px); 
+        opacity: 0;
+    }
+    100% { 
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

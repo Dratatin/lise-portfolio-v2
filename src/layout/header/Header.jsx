@@ -1,6 +1,7 @@
 import Container from "../container/Container";
 import Menu from "../../components/menu/Menu";
 import Socials from "../../components/socials/Socials";
+
 import "./_header.scss";
 
 const Header = ({onPortfolioPage}) => {
