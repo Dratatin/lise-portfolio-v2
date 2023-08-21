@@ -11,7 +11,6 @@ import 'swiper/css';
 import "./_portfolio.scss"
 
 const Portfolio = () => {
-    console.log(projects)
     return(
         <div className='portfolio'>
             <Swiper
@@ -30,7 +29,7 @@ const Portfolio = () => {
                     <SwiperSlide key={`project-${index}`} className='portfolio__slider__item'>
                         <Card 
                             title={project.title}
-                            tag={project.tag}
+                            tag={project.tag.label}
                             id={project.id}
                         />
                     </SwiperSlide>

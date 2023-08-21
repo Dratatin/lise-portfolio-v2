@@ -3,13 +3,13 @@ import Menu from "../../components/menu/Menu";
 import Socials from "../../components/socials/Socials";
 import "./_header.scss";
 
-const Header = () => {
+const Header = ({onPortfolioPage}) => {
     return(
         <header className="header">
             <Container layoutType="big">
                 <div className="header__content">
                     <div className="header__content__wrapper">
-                        <Menu />
+                        <Menu filterActive={onPortfolioPage}/>
                         <Socials />
                     </div>
                 </div>

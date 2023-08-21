@@ -1,7 +1,10 @@
 [
     {
         "id": "inktober",
-        "tag": "illustration",
+        "tag": {
+            "value": "illustrations",
+            "label": "illustrations"
+        },
         "title": "Inktober",
         "subtitle": "6 illustrations gothiques",
         "date": "2022",
@@ -18,7 +21,10 @@
     },
     {
         "id": "chatons-handicapes",
-        "tag": "webdesign",
+        "tag": {
+            "value": "webdesign",
+            "label": "webdesign"
+        },
         "title": "Chatons Handicapés",
         "subtitle": "Site web de l'association",
         "date": "2022",
@@ -28,7 +34,10 @@
     },
     {
         "id": "alocasia-frydek",
-        "tag": "360",
+        "tag": {
+            "value": "full",
+            "label": "360"
+        },
         "title": "Alocasia Frydek",
         "subtitle": "Typographie",
         "date": "2022",

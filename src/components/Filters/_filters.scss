@@ -1,0 +1,13 @@
+@import "/src/styles/variables";
+
+.filters {
+    display: flex;
+    gap: $gap-wrapper-cta;
+    input {
+        display: none;
+    }
+    label {
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+}

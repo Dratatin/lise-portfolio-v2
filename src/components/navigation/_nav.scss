@@ -4,6 +4,7 @@
     display: flex;
     gap: 20px;
     &__item {
+        font-size: 20px;
         &.active {
             font-weight: 900;
         }
