@@ -1,6 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Mousewheel, FreeMode } from 'swiper/modules'
+import { Mousewheel, FreeMode, Navigation } from 'swiper/modules'
 
 import { useState, useEffect } from 'react'
 import Card from '../../components/card/Card'
@@ -12,7 +12,7 @@ import 'swiper/css'
 
 import "./_portfolio.scss"
 
-const Portfolio = () => {
+const Portfolio = ({sliderNavPrev, sliderNavNext}) => {
     const { state } = useTheme()
     const [activeProjects, setProjects] = useState(projects)
 
@@ -28,19 +28,27 @@ const Portfolio = () => {
         <div className='portfolio'>
             <Swiper
                 slidesPerView={"auto"}
-                mousewheel={{
-                    enabled: true,
-                    releaseOnEdges: true,
-                    sensitivity: 20,
-                }}
+                // mousewheel={{
+                //     enabled: true,
+                //     releaseOnEdges: true,
+                //     sensitivity: 20,
+                // }}
                 freeMode={true}
-                direction={'horizontal'}
+                // direction={'horizontal'}
                 className='portfolio__slider'
-                modules={[Mousewheel, FreeMode]}
+                navigation={{
+                    prevEl: sliderNavPrev.current,
+                    nextEl: sliderNavNext.current,
+                }}
+                onBeforeInit={(swiper) => {
+                    swiper.params.navigation.prevEl = sliderNavPrev.current;
+                    swiper.params.navigation.nextEl = sliderNavNext.current;
+               }}
+                modules={[Mousewheel, FreeMode, Navigation]}
                 >
                 {activeProjects.map((project, index) => (
                     <SwiperSlide 
-                        key={`card-${index}`} 
+                        key={`card-${state.portfolio.filter}-${project.id}`} 
                         className='portfolio__slider__item'
                         style={{animationDelay:`${0.2 * index}s`}}
                     >

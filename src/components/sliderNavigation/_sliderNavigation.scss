@@ -1,0 +1,7 @@
+.slider-navigation {
+    display: flex;
+    gap: 30px;
+    &__button {
+        cursor: pointer;
+    }
+}
