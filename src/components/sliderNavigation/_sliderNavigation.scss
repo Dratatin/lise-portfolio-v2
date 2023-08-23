@@ -1,5 +1,6 @@
 .slider-navigation {
     display: flex;
+    justify-content: center;
     gap: 30px;
     &__button {
         cursor: pointer;

@@ -3,6 +3,7 @@
 .filters {
     display: flex;
     gap: $gap-wrapper-cta;
+    flex-wrap: wrap;
     input {
         display: none;
     }

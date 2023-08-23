@@ -9,11 +9,11 @@ const Footer = ({onPortfolioPage, sliderNav}) => {
         <footer className="footer">
             <Container layoutType="big">
                 <div className="footer__content">
-                    <Job />
+                    <Job othersClass="footer__content__item"/>
                     {onPortfolioPage === true &&
-                        <SliderNavigation sliderNav={sliderNav}/>
+                        <SliderNavigation othersClass="footer__content__item" sliderNav={sliderNav}/>
                     }
-                    <Credits />
+                    <Credits othersClass="footer__content__item"/>
                 </div>
             </Container>
         </footer>

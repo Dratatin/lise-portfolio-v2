@@ -13,7 +13,7 @@ const getTags = () => {
     return [...new Set(tags)]
 }
 
-const Filters = () => {
+const Filters = ({othersClass=''}) => {
     const tags = getTags()
     const allFilter = {
         'value': 'all',
@@ -26,7 +26,7 @@ const Filters = () => {
     }
 
     return(
-        <div className="filters">
+        <div className={`filters ${othersClass}`}>
                 <label>
                     <Tag color="secondary" decorationType={`${state.portfolio.filter === allFilter.value ? 'fill' : 'border'}`}>
                         {allFilter.label}

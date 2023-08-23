@@ -4,13 +4,13 @@ import Filters from "../Filters/Filters";
 
 import "./_menu.scss"
 
-const Menu = ({filterActive}) => {
+const Menu = ({onPortfolioPage}) => {
     return(
         <div className="menu">
             <Profil />
             <div className="menu__cta-wrapper">
                 <Nav />
-                {filterActive &&
+                {onPortfolioPage &&
                     <Filters />
                 }
             </div>

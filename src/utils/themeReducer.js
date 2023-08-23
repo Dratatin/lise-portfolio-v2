@@ -1,6 +1,7 @@
 export const initialState = {
     portfolio: {
         filter: "all",
+        deviceType: window.matchMedia('(max-width: 768px)').matches ? 'mobile' : 'desktop'
     }
 };
 
@@ -14,6 +15,11 @@ const themeReducer = (state, action) => {
                     ...state.portfolio,
                     filter: payload,
                 }
+            }
+        case "SET_DEVICE_TYPE":
+            return {
+                ...state,
+                deviceType: payload
             }
         default:
             throw new Error("no case for " + type)

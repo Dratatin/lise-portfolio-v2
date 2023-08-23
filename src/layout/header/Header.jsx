@@ -10,7 +10,7 @@ const Header = ({onPortfolioPage}) => {
             <Container layoutType="big">
                 <div className="header__content">
                     <div className="header__content__wrapper">
-                        <Menu filterActive={onPortfolioPage}/>
+                        <Menu onPortfolioPage={onPortfolioPage}/>
                         <Socials />
                     </div>
                 </div>

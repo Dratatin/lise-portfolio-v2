@@ -3,9 +3,9 @@ import {ReactComponent as ArrowRight} from '../../assets/slider-next.svg'
 
 import "./_sliderNavigation.scss";
 
-const SliderNavigation = ({sliderNav}) => {
+const SliderNavigation = ({sliderNav, othersClass=''}) => {
     return (
-        <div className="slider-navigation">
+        <div className={`slider-navigation ${othersClass}`}>
             <div className="slider-navigation__button" ref={sliderNav.prev}>
                 <ArrowLeft />
             </div>

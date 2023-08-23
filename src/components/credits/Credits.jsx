@@ -1,8 +1,8 @@
 import "./_credits.scss"
 
-const Credits = () => {
+const Credits = ({othersClass=''}) => {
     return(
-        <div className="credits">
+        <div className={`credits ${othersClass}`}>
             <span>
                 © 2023 Lise Denis
             </span>

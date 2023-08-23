@@ -14,16 +14,24 @@ export const ThemeProvider = ({ children }) => {
         })
     }
 
+    const setDeviceType = (deviceType) => {
+        dispatch({
+            type: "SET_DEVICE_TYPE",
+            payload: deviceType
+        })
+    }
+
     const store = {
         state,
-        setPortfolioFilter
+        setPortfolioFilter,
+        setDeviceType
     }
     return <ThemeContext.Provider value={store}> {children} </ThemeContext.Provider>
 }
 
-const useTheme = () => {
+const useAppState = () => {
     const context = useContext(ThemeContext)
     return context
 }
 
-export default useTheme
+export default useAppState
