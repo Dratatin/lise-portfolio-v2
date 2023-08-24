@@ -9,6 +9,16 @@
 }
 
 
+:root {
+    --global-font-size: 16px;
+    --container-big-padding: 100px;
+    --container-small-padding: 40px;
+    @media screen and (max-width: $mobile) {
+        --global-font-size: 12px;
+        --container-big-padding: var(--container-small-padding);
+    }
+}
+
 body {
     @include font-main;
 }
@@ -22,10 +32,13 @@ body {
     display: flex;
     flex-direction: column;
     background-color: $light;
-    font-size: $global-font-size;
+    font-size: var(--global-font-size);
     color: $primary;
     font-weight: 500;
-    gap: 30px;
+    gap: 60px;
+    @media screen and (max-width: $mobile) {
+        gap: 30px;
+    }
 }
 
 img {

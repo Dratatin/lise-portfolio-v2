@@ -1,0 +1,14 @@
+.header-mobile {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        &__behance, &__burger-menu {
+            flex: 1;
+        }
+        &__burger-menu {
+            text-align: right;
+        }
+    }
+}

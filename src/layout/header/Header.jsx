@@ -1,20 +1,19 @@
-import Container from "../container/Container";
-import Menu from "../../components/menu/Menu";
-import Socials from "../../components/socials/Socials";
+import HeaderDesktop from "../headerDesktop/headerDesktop"
+import HeaderMobile from "../headerMobile/HeaderMobile"
+import useAppState from "../../utils/themeContext"
 
 import "./_header.scss";
 
-const Header = ({onPortfolioPage}) => {
+const Header = () => {
+    const { state } = useAppState()
+
     return(
         <header className="header">
-            <Container layoutType="big">
-                <div className="header__content">
-                    <div className="header__content__wrapper">
-                        <Menu onPortfolioPage={onPortfolioPage}/>
-                        <Socials />
-                    </div>
-                </div>
-            </Container>
+            {state.deviceType === "desktop" ? 
+                <HeaderDesktop />
+            :
+                <HeaderMobile />
+            }
         </header>
     )
 }

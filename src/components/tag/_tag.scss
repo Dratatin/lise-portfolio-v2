@@ -6,18 +6,31 @@
     align-items: center;
     border-radius: 999px;
     white-space: nowrap;
+    font-size: 16px;
+    --medium-height: 40px;
+    --medium-padding: 15px;
+    --medium-font-size: var(--global-font-size);
+    --big-height: 55px;
+    --big-padding: 30px;
+    --big-font-size: 20px;
+    @media screen and (max-width: $mobile) {
+        --big-height: var(--medium-height);
+        --big-padding: var(--medium-padding);
+        --big-font-size: var(--medium-font-size);
+    }
     &--circle {
         padding: 0;
         width: 40px;
     }
     &--medium {
-        height: 40px;
-        padding: 0 15px;
+        height: var(--medium-height);
+        padding: 0 var(--medium-padding);
+        font-size: var(--medium-font-size);
     }
     &--big {
-        height: 55px;
-        padding: 0 30px;
-        font-size: 18px;
+        height: var(--big-height);
+        padding: 0 var(--big-padding);
+        font-size: var(--big-font-size);
     }
 
     &--fill {

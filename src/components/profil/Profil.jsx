@@ -1,9 +1,9 @@
-import firstProfilPic from "../../assets/profil-pic1.jpg";
+import firstProfilPic from "../../assets/profil-pic1.png";
 import "./_profil.scss";
 
-const Profil = () => {
+const Profil = ({othersClass=""}) => {
     return(
-        <div className="profil">
+        <div className={`profil ${othersClass}`}>
             <img className="profil__img" src={firstProfilPic} alt="Image de profil minimaliste"></img>
         </div>
     )

@@ -4,6 +4,9 @@
     display: flex;
     gap: $gap-wrapper-cta;
     flex-wrap: wrap;
+    @media screen and (max-width: $mobile) {
+        justify-content: center;
+    }
     input {
         display: none;
     }

@@ -1,16 +1,4 @@
 .header {
-    height: 170px;
     flex: none;
-    &__content {
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: column;
-            height: 100%;
-        &__wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-        }
-    }
+    padding-top: 30px;
 }

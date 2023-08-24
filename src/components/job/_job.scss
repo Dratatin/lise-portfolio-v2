@@ -3,8 +3,17 @@
 .job {
     display: flex;
     align-items: center;
-    gap: 5px;
-    &__icon {
-        fill: $secondary;
+    &__text {
+        position: relative;
+        margin-right: 15px;
+        white-space: nowrap;
+        &__icon {
+            fill: $secondary;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(100%, -50%);
+            padding-left: 5px;
+        }
     }
 }

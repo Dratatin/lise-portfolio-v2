@@ -13,7 +13,7 @@ import 'swiper/css'
 
 import "./_portfolio.scss"
 
-const Portfolio = ({sliderNavPrev, sliderNavNext}) => {
+const Portfolio = ({sliderRef}) => {
     const { state } = useTheme()
     const [activeProjects, setProjects] = useState(projects)
 
@@ -40,15 +40,8 @@ const Portfolio = ({sliderNavPrev, sliderNavNext}) => {
                 freeMode={true}
                 // direction={'horizontal'}
                 className='portfolio__slider'
-                navigation={{
-                    prevEl: sliderNavPrev.current,
-                    nextEl: sliderNavNext.current,
-                }}
-                onBeforeInit={(swiper) => {
-                    swiper.params.navigation.prevEl = sliderNavPrev.current;
-                    swiper.params.navigation.nextEl = sliderNavNext.current;
-               }}
                 modules={[Mousewheel, FreeMode, Navigation]}
+                ref={sliderRef}
                 >
                 {activeProjects.map((project, index) => (
                     <SwiperSlide 

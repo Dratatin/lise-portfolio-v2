@@ -4,8 +4,10 @@ import "./_job.scss"
 const Job = ({othersClass=''}) => {
     return(
         <div className={`job ${othersClass}`}>
-            Directrice Artistique
-            <Star className="job__icon" />
+            <span className='job__text'>
+                Directrice Artistique
+                <Star className="job__text__icon" />
+            </span>
         </div>
     )
 }
