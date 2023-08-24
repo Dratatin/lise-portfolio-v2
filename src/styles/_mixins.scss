@@ -1,8 +1,10 @@
 @mixin font-main {
     font-family: $main-font;
+    line-height: 1.6;
 }
 
 @mixin font-decorated {
     font-family: $decorated-font;
     letter-spacing: 0.07em;
+    line-height: 1;
 }

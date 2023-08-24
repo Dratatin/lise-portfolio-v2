@@ -11,10 +11,12 @@
 
 :root {
     --global-font-size: 16px;
+    --title-font-size: 50px;
     --container-big-padding: 100px;
     --container-small-padding: 40px;
     @media screen and (max-width: $mobile) {
         --global-font-size: 12px;
+        --title-font-size: 28px;
         --container-big-padding: var(--container-small-padding);
     }
 }
@@ -35,7 +37,8 @@ body {
     font-size: var(--global-font-size);
     color: $primary;
     font-weight: 500;
-    gap: 60px;
+    gap: 70px;
+    min-width: 350px;
     @media screen and (max-width: $mobile) {
         gap: 30px;
     }
