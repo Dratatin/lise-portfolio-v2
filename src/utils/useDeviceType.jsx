@@ -16,7 +16,7 @@ const useDeviceType = (setDeviceType) => {
     
         mediaQuery.addEventListener('change', handleResize);
         return () => {
-            mediaQuery.addEventListener('change',handleResize);
+            mediaQuery.removeEventListener('change', handleResize);
         };
     // Ignore es-lint warning that doesn't recognasize well setDeviceType as stable
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -52,3 +52,10 @@ img {
 h1, h2, h3, h4 {
     @include font-decorated;
 }
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}

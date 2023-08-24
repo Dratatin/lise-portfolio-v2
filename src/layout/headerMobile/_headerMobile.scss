@@ -1,4 +1,6 @@
 .header-mobile {
+    position: relative;
+    z-index: 10;
     &__content {
         display: flex;
         justify-content: space-between;
@@ -6,9 +8,11 @@
         height: 100%;
         &__behance, &__burger-menu {
             flex: 1;
+            margin-top: 30px;
         }
         &__burger-menu {
-            text-align: right;
+            display: flex;
+            justify-content: flex-end;
         }
     }
 }

@@ -8,6 +8,7 @@
     aspect-ratio: 5/6;
     @media screen and (max-width: $mobile) {
         max-width: 75vw;
+        gap: 20px;
     }
     &__illustration {
         background: $secondary-light;
