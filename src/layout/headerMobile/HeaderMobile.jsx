@@ -14,6 +14,15 @@ const HeaderMobile = () => {
     const burgerMenuIconRef = useRef(null);
     const [burgerMenuPos, setBurgerMenuPos] = useState();
 
+    useEffect(() => {
+        if (menuOpen === true) {
+            document.body.style.overflow = "hidden";
+        }
+        else {
+            document.body.style.overflow = "auto";
+        }
+    },[menuOpen])
+
 
     useEffect(() => {
         const updateBurgerMenuPos = () => {

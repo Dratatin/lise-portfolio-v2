@@ -1,6 +1,8 @@
 @import "/src/styles/variables";
+@import "/src/styles/mixins";
 
 .burger-menu {
+    --gap: 5vh;
     background-color: $tertiary;
     position: fixed;
     height: 100vh;
@@ -9,4 +11,30 @@
     left: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--gap);
+        width: 100%;
+        font-size: 80px;
+        color: $light;
+        @include font-decorated;
+    }
+    &__star {
+        width: 48px;
+        height: 48px;
+        &--secondary {
+            fill: $secondary;
+        }
+        &--quaternary {
+            fill: $quaternary;
+        }
+    }
 }

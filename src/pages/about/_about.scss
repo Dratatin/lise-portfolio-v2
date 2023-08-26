@@ -17,6 +17,7 @@
     &__avatar {
         max-width: calc(50% - (var(--gap)/2));
         @media screen and (max-width: $mobile) {
+            width: 100%;
             max-width: 400px;
         }
     }
