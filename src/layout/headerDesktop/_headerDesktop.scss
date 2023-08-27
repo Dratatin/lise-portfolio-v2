@@ -1,8 +1,13 @@
 .header-desktop {
+    display: flex;
+    gap: 20px;
     &__content {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
         width: 100%;
+        gap: 5px;
+        margin-top: 15px;
     }
 }

@@ -9,7 +9,7 @@ const Card = ({title, tag, id}) => {
             </div>
             <div className='card__details'>
                 <h2 className='card__details__title'>{title}</h2>
-                <Tag othersClass='card__details__tag' decorationType="fill" layoutSize="big">{tag}</Tag>
+                <Tag othersClass='card__details__tag'>{tag}</Tag>
             </div>
         </div>
     )

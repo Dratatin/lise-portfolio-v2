@@ -6,9 +6,6 @@ const Credits = ({othersClass=''}) => {
             <span>
                 © 2023 Lise Denis
             </span>
-            <span>
-                Développé par Mathys Chirouze
-            </span>
         </div>
     )
 }

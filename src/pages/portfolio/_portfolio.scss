@@ -12,10 +12,10 @@
 
     &__slider {
         height: 100%;
-        cursor: grab;
         user-select: none;
         width: 100%;
         padding: 0 var(--container-big-padding);
+        overflow: unset;
         &__item {
             width: auto;
             display: flex;

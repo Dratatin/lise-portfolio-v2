@@ -1,19 +1,13 @@
-import Profil from "../profil/Profil";
 import Nav from "../navigation/Nav";
-import Filters from "../Filters/Filters";
+import Socials from "../socials/Socials"
 
 import "./_menu.scss"
 
-const Menu = ({onPortfolioPage}) => {
+const Menu = ({othersClass=""}) => {
     return(
-        <div className="menu">
-            <Profil />
-            <div className="menu__cta-wrapper">
-                <Nav />
-                {onPortfolioPage &&
-                    <Filters />
-                }
-            </div>
+        <div className={`menu ${othersClass}`}>
+            <Nav />
+            <Socials />
         </div>
     )
 }

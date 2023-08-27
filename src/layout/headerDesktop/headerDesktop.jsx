@@ -1,6 +1,7 @@
 import Container from "../container/Container" 
 import Menu from "../../components/menu/Menu"
-import Socials from "../../components/socials/Socials"
+import Profil from "../../components/profil/Profil"
+import Filters from "../../components/Filters/Filters"
 import { useLocation } from "react-router-dom"
 
 import "./_headerDesktop.scss"
@@ -9,14 +10,17 @@ const HeaderDesktop = () => {
     const { pathname } = useLocation()
 
     return( 
-        <div className="header-desktop">
-            <Container layoutType="big">
+        <Container layoutType="big">
+            <div className="header-desktop">
+                <Profil />
                 <div className="header-desktop__content">
-                    <Menu onPortfolioPage={pathname === "/portfolio"}/>
-                    <Socials />
+                    <Menu />
+                    {pathname === "/portfolio" &&
+                        <Filters />
+                    }
                 </div>
-            </Container>
-        </div>
+            </div>
+        </Container>
     )
 }
 

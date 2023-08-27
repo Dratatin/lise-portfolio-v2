@@ -1,9 +1,9 @@
 import Tag from "../tag/Tag"
 import "./_socials.scss"
 
-const Socials = ({color}) => {
+const Socials = ({color, othersClass=""}) => {
     return(
-        <div className="socials">
+        <div className={`socials ${othersClass}`}>
             <a href="#">
                 <Tag layoutType="circle" decorationType="fill" color={color === "white" ? "white" : "primary"} whiteTextColor={color === "white" && "tertiary"}>In</Tag>
             </a>

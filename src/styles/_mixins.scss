@@ -4,7 +4,7 @@
 }
 
 @mixin font-decorated {
-    font-family: $decorated-font;
-    letter-spacing: 0.07em;
+    font-family: $main-font;
+    font-weight: bold;
     line-height: 1;
 }

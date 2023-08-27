@@ -11,7 +11,7 @@
 
 :root {
     --global-font-size: 16px;
-    --title-font-size: 50px;
+    --title-font-size: 34px;
     --container-big-padding: 100px;
     --container-small-padding: 40px;
     @media screen and (max-width: $mobile) {
@@ -23,6 +23,7 @@
 
 body {
     @include font-main;
+    cursor: none;
 }
 
 * {
@@ -37,7 +38,7 @@ body {
     font-size: var(--global-font-size);
     color: $primary;
     font-weight: 500;
-    gap: 70px;
+    gap: 50px;
     min-width: 350px;
     @media screen and (max-width: $mobile) {
         height: auto;

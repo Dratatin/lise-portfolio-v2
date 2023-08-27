@@ -7,6 +7,7 @@ import Portfolio from './pages/portfolio/Portfolio'
 import About from './pages/about/About'
 import useDeviceType from './utils/useDeviceType'
 import useAppState from './utils/themeContext'
+import Cursor from './components/cursor/Cursor'
 
 import './styles/main.css'
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className='app'>
+      <Cursor />
       <Header />
       <Main>
         <Routes>

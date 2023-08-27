@@ -6,9 +6,23 @@
     display: flex;
     gap: 30px;
     aspect-ratio: 5/6;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 40px;
+
+    transition: all 0.3s cubic-bezier(.25,.75,.5,1.25);
+    transform-origin: center;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -webkit-font-smoothing: subpixel-antialiased;
     @media screen and (max-width: $mobile) {
         max-width: 75vw;
         gap: 20px;
+    }
+    &:hover {
+        transform: scale(1.05) translateZ(0);
     }
     &__illustration {
         background: $secondary-light;
@@ -30,9 +44,9 @@
         align-items: flex-end;
         justify-content: space-between;
         gap: 20px;
+        padding: 0 10px;
         &__title {
             font-size: var(--title-font-size);
-            color: $primary-light;
         }
         &__tag {
             text-transform: capitalize;
