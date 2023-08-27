@@ -5,6 +5,7 @@ import Footer from './layout/footer/Footer'
 import Main from './layout/main/Main'
 import Portfolio from './pages/portfolio/Portfolio'
 import About from './pages/about/About'
+import Error404 from './pages/Error404/Error404'
 import useDeviceType from './utils/useDeviceType'
 import useAppState from './utils/themeContext'
 import Cursor from './components/cursor/Cursor'
@@ -32,7 +33,7 @@ function App() {
             />}>
           </Route>
           <Route path='/portfolio/project/:id'></Route>
-          <Route path='*'></Route>
+          <Route path='*' element={<Error404 />}></Route>
         </Routes>
       </Main>
       <Footer 
