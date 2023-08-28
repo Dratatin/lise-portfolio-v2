@@ -4,23 +4,21 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
 
     &__filters {
-        padding: 0 var(--container-big-padding);
+        padding-left: var(--container-big-padding);
+        padding-right: var(--container-big-padding);
     }
 
     &__slider {
         height: 100%;
         user-select: none;
         width: 100%;
-        padding: 0 var(--container-big-padding);
-        overflow: unset;
+        padding: 30px var(--container-big-padding);
         &__item {
-            width: auto;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             animation: slide 0.5s both;
             &:not(:last-child) {
                 padding-right: 40px;
@@ -29,6 +27,9 @@
                 }
             }
         }
+    }
+    .swiper-slide {
+        width: unset;
     }
 }
 

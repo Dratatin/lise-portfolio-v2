@@ -1,5 +1,4 @@
-import Tag from "../tag/Tag"
-import useTheme from "../../utils/themeContext"
+import Filter from "../filter/Filter"
 
 import "./_filters.scss"
 
@@ -19,39 +18,12 @@ const Filters = ({othersClass=''}) => {
         'value': 'all',
         'label': 'tout'
     }
-    const { state, setPortfolioFilter } = useTheme()
-
-    const handleChange = (e) => {
-        setPortfolioFilter(e.target.value)
-    }
 
     return(
         <div className={`filters ${othersClass}`}>
-                <label>
-                    <Tag color="secondary" decorationType={`${state.portfolio.filter === allFilter.value ? 'fill' : 'border'}`}>
-                        {allFilter.label}
-                        <input 
-                            type="radio" 
-                            name="filter" 
-                            value={allFilter.value}
-                            checked={state.portfolio.filter === allFilter.value}
-                            onChange={handleChange}
-                        />
-                    </Tag>
-                </label>
+            <Filter elem={allFilter}/>
             {tags.map((elem, index) => (
-                <label key={`tag-${index}`}>
-                    <Tag color="secondary" decorationType={`${state.portfolio.filter === elem.value ? 'fill' : 'border'}`}>
-                        {elem.label}
-                        <input 
-                            type="radio" 
-                            name="filter" 
-                            value={elem.value} 
-                            checked={state.portfolio.filter === elem.value}
-                            onChange={handleChange}
-                        />
-                    </Tag>
-                </label>
+                <Filter elem={elem} key={`tag-${index}`}/>
             ))}
         </div>
     )

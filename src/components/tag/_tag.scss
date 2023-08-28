@@ -6,6 +6,7 @@
     align-items: center;
     border-radius: 999px;
     white-space: nowrap;
+    text-transform: capitalize;
     --medium-height: 40px;
     --medium-padding: 15px;
     --medium-font-size: 16px;
@@ -71,30 +72,26 @@
         }
     }
     &--border {
+        background: transparent;
         &.tag--primary {
             color: $primary;
             border: 2px solid $primary;
-            background: transparent;
         }
         &.tag--secondary {
             color: $secondary;
             border: 2px solid $secondary;
-            background: transparent;
         }
         &.tag--tertiary {
             color: $tertiary;
             border: 2px solid $tertiary;
-            background: transparent;
         }
         &.tag--quaternary {
             color: $quaternary;
             border: 2px solid $quaternary;
-            background: transparent;
         }
         &.tag--white {
             color: $light;
             border: 2px solid $light;
-            background: transparent;
         }
     }
 }

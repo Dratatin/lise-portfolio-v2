@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import Header from './layout/header/Header'
 import Footer from './layout/footer/Footer'
 import Main from './layout/main/Main'
@@ -9,6 +9,7 @@ import Error404 from './pages/Error404/Error404'
 import useDeviceType from './utils/useDeviceType'
 import useAppState from './utils/themeContext'
 import Cursor from './components/cursor/Cursor'
+import { isBrowser } from 'react-device-detect';
 
 import './styles/main.css'
 
@@ -18,9 +19,20 @@ function App() {
 
   useDeviceType(setDeviceType)
 
+  useEffect(() => {
+    const appHeight = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    window.addEventListener('resize', appHeight)
+    appHeight()
+  },[])
+
   return (
     <div className='app'>
-      <Cursor />
+      {isBrowser &&
+        <Cursor />
+      }
       <Header />
       <Main>
         <Routes>

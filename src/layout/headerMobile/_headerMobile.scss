@@ -4,11 +4,10 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         height: 100%;
         &__behance, &__burger-menu {
             flex: 1;
-            margin-top: 30px;
         }
         &__burger-menu {
             display: flex;

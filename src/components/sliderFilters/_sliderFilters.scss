@@ -1,0 +1,14 @@
+@import "/src/styles/variables";
+
+.swiper.slider-filters {
+    width: 100%;
+    overflow: initial;
+    .slider-filters__filter {
+        input {
+            display: none;
+        }
+        &:not(:last-child) {
+            margin-right: $gap-wrapper-cta;
+        }
+    }
+}

@@ -1,10 +1,10 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Mousewheel, FreeMode, Navigation } from 'swiper/modules'
+import { Mousewheel, FreeMode } from 'swiper/modules'
 
 import { useState, useEffect } from 'react'
 import Card from '../../components/card/Card'
-import Filters from '../../components/Filters/Filters'
+import SliderFilters from '../../components/sliderFilters/SliderFilters'
 import useTheme from "../../utils/themeContext"
 import projects from "../../datas/projects.json"
 
@@ -28,7 +28,7 @@ const Portfolio = ({sliderRef}) => {
     return(
         <div className='portfolio'>
             {state.deviceType === "mobile" &&
-                <Filters othersClass='portfolio__filters' />
+                <SliderFilters othersClass='portfolio__filters'/>
             }
             <Swiper
                 slidesPerView={"auto"}
@@ -40,7 +40,7 @@ const Portfolio = ({sliderRef}) => {
                 freeMode={true}
                 // direction={'horizontal'}
                 className='portfolio__slider'
-                modules={[Mousewheel, FreeMode, Navigation]}
+                modules={[Mousewheel, FreeMode]}
                 ref={sliderRef}
                 >
                 {activeProjects.map((project, index) => (
