@@ -5,6 +5,7 @@ import { Mousewheel, FreeMode } from 'swiper/modules'
 import { useState, useEffect } from 'react'
 import Card from '../../components/card/Card'
 import SliderFilters from '../../components/sliderFilters/SliderFilters'
+import Filters from '../../components/filters/Filters'
 import useTheme from "../../utils/themeContext"
 import projects from "../../datas/projects.json"
 
@@ -27,8 +28,10 @@ const Portfolio = ({sliderRef}) => {
 
     return(
         <div className='portfolio'>
-            {state.deviceType === "mobile" &&
+            {state.deviceType === "mobile" ?
                 <SliderFilters othersClass='portfolio__filters'/>
+                : 
+                <Filters othersClass='portfolio__filters'/>
             }
             <Swiper
                 slidesPerView={"auto"}

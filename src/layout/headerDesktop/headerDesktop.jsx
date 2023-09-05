@@ -1,7 +1,6 @@
 import Container from "../container/Container" 
 import Menu from "../../components/menu/Menu"
 import Profil from "../../components/profil/Profil"
-import Filters from "../../components/Filters/Filters"
 import { useLocation } from "react-router-dom"
 
 import "./_headerDesktop.scss"
@@ -15,9 +14,6 @@ const HeaderDesktop = () => {
                 <Profil />
                 <div className="header-desktop__content">
                     <Menu />
-                    {pathname === "/portfolio" &&
-                        <Filters />
-                    }
                 </div>
             </div>
         </Container>
