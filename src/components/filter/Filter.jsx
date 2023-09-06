@@ -11,7 +11,11 @@ const Filter = ({elem}) => {
 
     return (
         <label>
-            <Tag color="secondary" decorationType={`${state.portfolio.filter === elem.value ? 'fill' : 'border'}`}>
+            <Tag 
+                firstcolor="light"
+                secondcolor={`${state.portfolio.filter === elem.value ? 'primary' : 'transparent'}`}
+                decorationType= "fill"
+            >
                 {elem.label}
                 <input 
                     type="radio" 

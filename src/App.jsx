@@ -30,9 +30,9 @@ function App() {
 
   return (
     <div className='app'>
-      {isBrowser &&
+      {/* {isBrowser &&
         <Cursor />
-      }
+      } */}
       <Header />
       <Main>
         <Routes>
@@ -48,9 +48,9 @@ function App() {
           <Route path='*' element={<Error404 />}></Route>
         </Routes>
       </Main>
-      <Footer 
+      {/* <Footer 
         sliderRef={sliderRef}
-      />
+      /> */}
     </div>
   );
 }

@@ -2,9 +2,10 @@
 
 .tag {
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
-    border-radius: 999px;
+    border-radius: 8px;
     white-space: nowrap;
     text-transform: capitalize;
     --medium-height: 40px;
@@ -33,64 +34,67 @@
         font-size: var(--big-font-size);
     }
 
-    &--fill {
-        &.tag--primary {
-            color: $light;
-            background-color: $primary;
-            border: 2px solid $primary;
-        }
-        &.tag--secondary {
-            color: $light;
-            background-color: $secondary;
-            border: 2px solid $secondary;
-        }
-        &.tag--tertiary {
-            color: $light;
-            background-color: $tertiary;
-            border: 2px solid $tertiary;
-        }
-        &.tag--quaternary {
-            color: $light;
-            background-color: $quaternary;
-            border: 2px solid $quaternary;
-        }
-        &.tag--white {
-            background-color: $light;
-            border: 2px solid $light;
-            &--primary {
-                color: $primary;
-            }
-            &--secondary {
-                color: $secondary;
-            }
-            &--tertiary {
-                color: $tertiary;
-            }
-            &--quaternary {
-                color: $quaternary;
-            }
-        }
-    }
     &--border {
-        background: transparent;
-        &.tag--primary {
+        &.tag--firstcolor--primary {
             color: $primary;
             border: 2px solid $primary;
         }
-        &.tag--secondary {
+        &.tag--firstcolor--secondary {
             color: $secondary;
             border: 2px solid $secondary;
         }
-        &.tag--tertiary {
+        &.tag--firstcolor--tertiary {
             color: $tertiary;
             border: 2px solid $tertiary;
         }
-        &.tag--quaternary {
+        &.tag--firstcolor--quaternary {
             color: $quaternary;
             border: 2px solid $quaternary;
         }
-        &.tag--white {
+        &.tag--firstcolor--light {
             color: $light;
+            border: 2px solid $light;
+        }
+    }
+
+    &--fill {
+        &.tag--firstcolor--primary {
+            color: $primary;
+        }
+        &.tag--firstcolor--secondary {
+            color: $secondary;
+        }
+        &.tag--firstcolor--tertiary {
+            color: $tertiary;
+        }
+        &.tag--firstcolor--quaternary {
+            color: $quaternary;
+        }
+        &.tag--firstcolor--light {
+            color: $light;
+        }
+        &.tag--secondcolor--transparent {
+            background: transparent;
+            border: 2px solid transparent;
+        }
+        &.tag--secondcolor--primary {
+            background-color: $primary;
+            border: 2px solid $primary;
+        }
+        &.tag--secondcolor--secondary {
+            background-color: $secondary;
+            border: 2px solid $secondary;
+        }
+        &.tag--secondcolor--tertiary {
+            background-color: $tertiary;
+            border: 2px solid $tertiary;
+        }
+        &.tag--secondcolor--quaternary {
+            background-color: $quaternary;
+            border: 2px solid $quaternary;
+        }
+        &.tag--secondcolor--light {
+            background-color: $light;
             border: 2px solid $light;
         }
     }

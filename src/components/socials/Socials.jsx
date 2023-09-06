@@ -4,14 +4,14 @@ import "./_socials.scss"
 const Socials = ({color, othersClass=""}) => {
     return(
         <div className={`socials ${othersClass}`}>
-            <a href="#">
-                <Tag layoutType="circle" decorationType="fill" color={color === "white" ? "white" : "primary"} whiteTextColor={color === "white" && "tertiary"}>In</Tag>
+            <a href="#" className="socials__item">
+                <Tag firstcolor="light" secondcolor="transparent" decorationType="fill">In</Tag>
             </a>
-            <a href="#">
-                <Tag color={color === "white" ? "white" : "primary"}>Mon CV</Tag>
+            <a href="#" className="socials__item">
+                <Tag firstcolor="light" secondcolor="transparent" decorationType="fill">Be</Tag>
             </a>
-            <a href="#">
-                <Tag layoutType="circle" decorationType="fill" color={color === "white" ? "white" : "primary"} whiteTextColor={color === "white" && "tertiary"}>Be</Tag>
+            <a href="#" className="socials__item">
+                <Tag firstcolor="light" secondcolor="transparent" decorationType="fill">Mon CV</Tag>
             </a>
         </div>
     )

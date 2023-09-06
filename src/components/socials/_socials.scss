@@ -3,4 +3,14 @@
 .socials {
     display: flex;
     gap: $gap-wrapper-cta;
+    flex-wrap: wrap;
+    &__item {
+        flex: 1;
+        &--cv {
+            width: 100%;
+        }
+        &--in {
+            flex: 0;
+        }
+    }
 }

@@ -9,7 +9,9 @@ $secondary-light: lighten(#EB6633, 50%);
 $tertiary-light: lighten(#4A775D, 30%);
 $quaternary-light: lighten(#F2B641, 50%);
 
-$light: #fff;
+$light: #EBE7F6;
+$light-dark: lighten(#1E1E1E, 5%);
+$dark: #1E1E1E;
 
 //FONTS
 $decorated-font: 'Bogam', 'Anton' , serif;

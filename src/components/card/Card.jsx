@@ -14,7 +14,7 @@ const Card = ({title, tag, id}) => {
             <div className='card__details'>
                 <h2 className='card__details__title'>{title}</h2>
                 {isBrowser &&
-                    <Tag othersClass='card__details__tag'>{tag}</Tag>
+                    <Tag firstcolor="light" secondcolor="primary" layoutType="fill" othersClass='card__details__tag'>{tag}</Tag>
                 }
             </div>
         </div>

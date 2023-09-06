@@ -1,10 +1,13 @@
-import firstProfilPic from "../../assets/profil-pic1.png";
+import avatar from "../../assets/avatar.png"
 import "./_profil.scss";
 
 const Profil = ({othersClass=""}) => {
     return(
         <div className={`profil ${othersClass}`}>
-            <img className="profil__img" src={firstProfilPic} alt="Image de profil minimaliste"></img>
+            <div className="profil__img">
+                <img src={avatar} alt="Image de profil minimaliste"></img>
+            </div>
+            <h2 className="profil__title">Lise Denis</h2>
         </div>
     )
 }

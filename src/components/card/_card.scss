@@ -7,30 +7,17 @@
     gap: 30px;
     aspect-ratio: 5/6;
     padding: 20px;
-    border: 2px solid;
-    border-radius: 40px;
-
-    transition: all 0.3s cubic-bezier(.25,.75,.5,1.25);
-    transform-origin: center;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    -webkit-font-smoothing: subpixel-antialiased;
+    border-radius: 20px;
+    background-color: $light-dark;
     @media screen and (max-width: $mobile) {
         height: auto;
         aspect-ratio: unset;
         gap: 15px;
         max-width: calc(100vw - var(--container-big-padding)*3);
     }
-    &:hover {
-        @media screen and (min-width: $mobile) {
-            transform: scale(1.05) translateZ(0);
-        }
-    }
     &__illustration {
         background: $secondary-light;
-        border-radius: 30px;
+        border-radius: 15px;
         overflow: hidden;
         height: 100%;
         position: relative;
